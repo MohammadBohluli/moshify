@@ -1,0 +1,25 @@
+@use "../variables" as *;
+
+.link-arrow {
+  color: $color-accent;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+
+  &::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.1s;
+  }
+
+  &:hover::after {
+    margin-left: 10px;
+  }
+}
+
+// componenet
+// <a href="" class="link-arrow">learn more</a>
