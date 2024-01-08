@@ -16,3 +16,26 @@
 ::placeholder {
   color: #cdcbd7;
 }
+
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+
+  & .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+  }
+
+  & .btn {
+    margin: 4px;
+  }
+}
+
+// component
+// <div class="input-group">
+// <input class="input" type="search" placeholder="Enter domain name here ..."/>
+// <button href="#" class="btn btn--accent">search</button>
+// </div>
