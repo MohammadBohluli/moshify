@@ -1,0 +1,18 @@
+@use "../variables" as *;
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: 0;
+  box-shadow: 0 0;
+  padding: 1.5rem 3.5rem;
+  color: $color-headings;
+  font-size: 2rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
