@@ -1,0 +1,65 @@
+@use "../variables" as *;
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &--primary {
+    &:hover {
+      background-color: darken($color-primary, 4%);
+    }
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  &--secondary {
+    &:hover {
+      background-color: darken($color-secondary, 4%);
+    }
+    background-color: $color-secondary;
+    color: #fff;
+  }
+
+  &--accent {
+    &:hover {
+      background-color: darken($color-accent, 4%);
+    }
+    background-color: $color-accent;
+    color: #fff;
+  }
+
+  &--block {
+    width: 100%;
+    display: inline-block;
+  }
+
+  &--outline {
+    &:hover {
+      background-color: $color-headings;
+      color: #fff;
+    }
+    background-color: #fff;
+    border: 2px solid $color-headings;
+    color: $color-headings;
+  }
+
+  &--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+// components
+// <a href="#" class="btn btn--primary">buy now</a>
+// <a href="#" class="btn btn--secondary">buy now</a>
+// <a href="#" class="btn btn--block btn--accent">buy now</a>
+// <a href="#" class="btn btn--primary btn--stretched">buy now</a>
