@@ -125,4 +125,21 @@ a {
   }
 }
 
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  background-color: #f3f9fa;
+  justify-content: center;
+  align-items: center;
+}
+.icon--primary {
+  fill: #2584ff;
+}
+
 /*# sourceMappingURL=styles.css.map */

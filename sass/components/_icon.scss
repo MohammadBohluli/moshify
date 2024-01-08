@@ -1,0 +1,26 @@
+@use "../variables" as *;
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+  &-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    background-color: #f3f9fa;
+    justify-content: center;
+    align-items: center;
+  }
+  &--primary {
+    fill: $color-primary;
+  }
+}
+
+// components
+// <span class="icon-container">
+//     <svg class="icon icon--primary">
+//         <use xlink:href="images/sprite.svg#wordpress"></use>
+//     </svg>
+// </span>
