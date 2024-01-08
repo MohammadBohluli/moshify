@@ -311,4 +311,20 @@ a {
   margin-bottom: 2rem;
 }
 
+.media {
+  display: flex;
+}
+.media__image {
+  margin-top: 1rem;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__body > p {
+  font-size: 2rem;
+}
+.media__title {
+  font-size: 2.4rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
