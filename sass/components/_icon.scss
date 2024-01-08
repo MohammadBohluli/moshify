@@ -4,6 +4,11 @@
   width: 40px;
   height: 40px;
 
+  &--small {
+    width: 30px;
+    height: 30px;
+  }
+
   &-container {
     width: 64px;
     height: 64px;
@@ -12,15 +17,22 @@
     background-color: #f3f9fa;
     justify-content: center;
     align-items: center;
+    &--accent {
+      background-color: $color-accent;
+    }
   }
   &--primary {
     fill: $color-primary;
+  }
+
+  &--white {
+    fill: #fff;
   }
 }
 
 // components
 // <span class="icon-container">
-//     <svg class="icon icon--primary">
-//         <use xlink:href="images/sprite.svg#wordpress"></use>
-//     </svg>
+// <svg class="icon icon--primary">
+//     <use xlink:href="images/sprite.svg#wordpress"></use>
+// </svg>
 // </span>
