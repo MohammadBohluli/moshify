@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+.block {
+  padding: 6rem 2rem;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &--dark {
+    background: #000;
+    color: #7b858b;
+    .block__heading {
+      color: #fff;
+    }
+  }
+
+  &--skewed-right {
+    padding-bottom: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  }
+
+  &--skewed-left {
+    padding-bottom: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+// component
+// <section class="block block--dark block--skewed-left">
+// <div class="container">
+//   <header class="block__header">
+//     <h2 class="block__heading"></h2>
+//     <p>
+//       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+//       ullam voluptatum, voluptatem similique natus autem?
+//     </p>
+//   </header>
+// </div>
+// </section>
