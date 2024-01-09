@@ -207,8 +207,8 @@ a {
   color: #fff;
 }
 .btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
 .input {
@@ -413,6 +413,40 @@ a {
 }
 .testimonial__img img {
   width: 100%;
+}
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout__content {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.callout__heading {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 0;
+}
+.callout .btn {
+  align-self: center;
+  justify-self: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+.callout--primary {
+  background-color: #2584ff;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
