@@ -17,6 +17,12 @@
     font-size: 1.5rem;
   }
 
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
   &--primary {
     &:hover {
       background-color: darken($color-primary, 4%);
