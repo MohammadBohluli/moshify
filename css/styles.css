@@ -449,4 +449,29 @@ a {
   color: #fff;
 }
 
+.collapsibles__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsibles__heading {
+  font-size: 3rem;
+}
+.collapsibles__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.collapsibles__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.collapsibles--expanded .collapsibles__chevron {
+  transform: rotate(0);
+}
+.collapsibles--expanded .collapsibles__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */
