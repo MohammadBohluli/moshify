@@ -1,6 +1,17 @@
 @use "../variables" as *;
 
 .plan {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--popular {
+    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
   &--popular .card__header {
     position: relative;
     &::before {
