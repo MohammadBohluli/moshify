@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav collapsibles">
@@ -144,7 +145,7 @@
         </p>
       </header>
       <article class="feature grid grid--1x2">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use href="images/sprite.svg#easy"></use>
@@ -157,7 +158,12 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <img class="feature__img" src="/images/easy.jpg" alt="" />
+        <img
+          class="feature__img"
+          src="/images/easy.jpg"
+          alt=""
+          data-aos="zoom-in-left"
+        />
       </article>
       <!-- article -->
       <article class="feature grid grid--1x2">
@@ -403,7 +409,10 @@
       </div>
     </footer>
     <!-- end footer---------------------------------------------------------- -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
