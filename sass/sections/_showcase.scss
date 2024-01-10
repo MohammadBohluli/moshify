@@ -1,0 +1,21 @@
+.block-showcase {
+  .block__header {
+    margin-bottom: 5rem;
+  }
+  &__img {
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  .grid {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+  .media__title {
+    color: #fff;
+  }
+}

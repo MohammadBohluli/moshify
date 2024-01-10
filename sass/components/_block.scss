@@ -21,12 +21,12 @@
 
   &--skewed-right {
     padding-bottom: 10rem;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   }
 
   &--skewed-left {
     padding-bottom: 10rem;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   }
 }
 

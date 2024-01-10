@@ -1,7 +1,6 @@
 @use "../variables" as *;
 
 .list {
-  color: $color-headings;
   list-style: none;
 
   &--inline &__item {
@@ -12,6 +11,7 @@
   &--tick {
     list-style-image: url(../../images/tick.svg);
     padding-left: 3rem;
+    color: $color-headings;
   }
 
   &--tick &__item {
